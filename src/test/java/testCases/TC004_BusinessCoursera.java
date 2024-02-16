@@ -10,7 +10,7 @@ import pageObjects.UniversitiesPage;
 
 public class TC004_BusinessCoursera extends TC003_LanguageLearning{
 	
-	@Test(priority = 12, groups= {"regression","Master"})
+	@Test(priority = 12, groups= {"regression","master"})
 	public void clickSolution() throws InterruptedException {
 		BusinessPage bp = new BusinessPage(driver);
 		bp.clickSolution();
@@ -19,7 +19,7 @@ public class TC004_BusinessCoursera extends TC003_LanguageLearning{
 				
 	}
 	
-	@Test(priority = 13, groups= {"regression","Master"})
+	@Test(priority = 13, groups= {"regression","master"})
 	public void clickContactUs() throws InterruptedException {
 		UniversitiesPage up = new UniversitiesPage(driver);
 		up.clickContactUs();
@@ -27,7 +27,7 @@ public class TC004_BusinessCoursera extends TC003_LanguageLearning{
 		logger.info("---//Contact Us Page Opened//---");
 	}
 	
-	@Test(priority = 14, groups= {"regression","Master"})
+	@Test(priority = 14, groups= {"regression","master"})
 	public void details() throws InterruptedException, IOException {
 		ContactUsPage cp = new ContactUsPage(driver);
 		String msg = cp.enterDetails();

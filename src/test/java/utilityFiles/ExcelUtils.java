@@ -56,7 +56,6 @@ public class ExcelUtils {
 		String data;
 		try 
 		{
-			//data=cell.toString();
 			DataFormatter formatter = new DataFormatter();
             data = formatter.formatCellValue(cell);
             return data;

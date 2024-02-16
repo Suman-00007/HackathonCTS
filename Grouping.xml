@@ -10,7 +10,7 @@
  
   </listeners>
  
-  <test thread-count="1" name="test">
+  <test thread-count="3" name="test">
  
        <parameter name="os" value="windows"/>
  

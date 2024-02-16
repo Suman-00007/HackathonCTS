@@ -25,7 +25,6 @@ public class WebDevelopmentPage extends BasePage{
 	@FindBy(xpath = "//button[@aria-label=\"Show more Language options\"]")WebElement showMoreLanguages;
 	@FindBy(xpath = "//input[@type='search']")WebElement LanguageSearchBox;
 	@FindBy(xpath = "//button[@aria-label=\"Search\"]")WebElement LanguageSearchButton;
-//	@FindBy(xpath = "(//div[contains(@class,'cds-checkboxAndRadio-labelText')]//span[contains(text(),'English')])[2]")WebElement EnglishLang;
 	@FindBy(xpath = "(//span[text()='English']//parent::div//preceding-sibling::span)[1]")WebElement EnglishLang;
 	@FindBy(xpath = "//span[contains(text(),'Apply')]")WebElement ApplyButton;
 	@FindBy(xpath = "//label[@class=\"cds-checkboxAndRadio-label\"]//span[contains(text(),'Beginner')]")WebElement BeginnerLevel;
@@ -49,13 +48,8 @@ public class WebDevelopmentPage extends BasePage{
 	
 	//Action Methods
 	public void selectLanguage() throws InterruptedException {
-//		showMoreLanguages.click();
 		Thread.sleep(1000);
-//		LanguageSearchBox.sendKeys("English");
-//		LanguageSearchButton.click();
-//		Thread.sleep(1000);
 		EnglishLang.click();
-//		ApplyButton.click();
 		Thread.sleep(3000);
 		
 	}
@@ -70,15 +64,7 @@ public class WebDevelopmentPage extends BasePage{
 		
 	}
 	
-//	public void AllLevel() {
-////		List<WebElement> Levels = driver.findElements(By.xpath("//h3[contains(@class,\"CommonCard-title\")]"));
-//		for(int i =1; i<Levels.size(); i++) {
-//			String Level = Levels.get(i).getText();
-//			System.out.println(Level);                
-//		}
-////		System.out.println("-------------------------------------");
-//		
-//	}
+
 	
 	public void FirstNameRatingTime() throws IOException {
 		String Head1 = FirstHead.getText();
@@ -95,7 +81,6 @@ public class WebDevelopmentPage extends BasePage{
 			excel.setCellData(xlFile, "CoursesPage", 2, 0, Head1);
 			excel.setCellData(xlFile, "CoursesPage", 2, 1, Rateing1);
 			excel.setCellData(xlFile, "CoursesPage", 2, 2, arrDur[2]);
-//			excel.fillGreenColor(xlFile, "RandomNews", 0, 0);
 		
 	}
 	
@@ -121,29 +106,6 @@ public class WebDevelopmentPage extends BasePage{
 		FirstCard.click();
 	}
 	
-//	public void FirstCardsPage() throws InterruptedException {
-//		Set<String> winIds= driver.getWindowHandles();
-//		List<String> windowIds = new ArrayList<String>(winIds);
-//		String Parent = windowIds.get(0);
-//		String child = windowIds.get(1);
-//		
-//		driver.switchTo().window(child);
-//		ScrollDown sd = new ScrollDown(driver);	
-//		
-//		String Head1 = FirstCardHead.getText();
-//		Thread.sleep(2000);
-//		sd.scrolldown();
-//		sd.scrolldown();
-//		sd.scrolldown();
-//		String Rate1 = FirstCardRating.getText();
-//		String Duration = FirstCardDuration.getText();
-//		System.out.println("Course: "+Head1);
-//		System.out.println("Rating: "+Rate1);
-//		System.out.println("Duration: "+Duration);
-//		
-//		
-//		
-//	}
 	
 	public void Search() throws InterruptedException {
 		Thread.sleep(3000);

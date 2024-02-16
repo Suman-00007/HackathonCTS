@@ -10,8 +10,6 @@ import java.util.Properties;
  
 import java.util.Scanner;
  
-import javax.print.DocFlavor.URL;
- 
 import org.apache.logging.log4j.LogManager;
  
 import org.apache.logging.log4j.Logger;
@@ -50,7 +48,7 @@ public class BaseClass {
  
 	Scanner sc;
  
-	@BeforeTest(groups= {"sanity","regression","Master"})
+	@BeforeTest(groups={"sanity","regression","Master"})
  
 	@Parameters({"os","browser"})
  
@@ -64,17 +62,7 @@ public class BaseClass {
  
 		p.load(file);
  
-		ChromeOptions chromeOptions=new ChromeOptions();
- 
-		chromeOptions.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
- 
-		chromeOptions.addArguments("--disable-notifications");
- 
-		EdgeOptions edgeOptions=new EdgeOptions();
- 
-		edgeOptions.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
- 
-		edgeOptions.addArguments("--disable-notifications");
+
  
  
 		logger = LogManager.getLogger(this.getClass());
@@ -169,7 +157,7 @@ public class BaseClass {
  
 			}
  
-	@AfterTest(groups= {"sanity","regression","master"})
+	@AfterTest(groups={"sanity","regression","master"})
  
 	public void tearDown() {
  

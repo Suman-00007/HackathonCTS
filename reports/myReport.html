@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Functional Testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 9, 2024 02:21:10 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 14, 2024 10:27:39 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,17 +76,23 @@
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">master</a><a class="dropdown-item" href="#">sanity</a><a class="dropdown-item" href="#">regression</a>
+</ul>
+</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag=""
+          tag="master sanity"
           device="">
           <div class="test-detail">
             <p class="name">searchHomePage</p>
             <p class="text-sm">
-              <span>2:22:47 pm</span> / <span>00:00:00:301</span>
+              <span>10:28:19 pm</span> / <span>00:00:00:432</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,14 +101,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">searchHomePage</h5>
-<span class='badge badge-success'>02.09.2024 2:22:47 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:22:47 pm</span>
-<span class='badge badge-default'>00:00:00:301</span>
+<span class='badge badge-success'>02.14.2024 10:28:19 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:19 pm</span>
+<span class='badge badge-default'>00:00:00:432</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">sanity</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\searchHomePage.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\searchHomePage.png">
@@ -109,7 +122,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:22:47 pm</td>
+        <td>10:28:19 pm</td>
         <td>
           Test case PASSED is:searchHomePage
         </td>
@@ -121,12 +134,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="2"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">levelSelector</p>
             <p class="text-sm">
-              <span>2:22:51 pm</span> / <span>00:00:00:327</span>
+              <span>10:28:23 pm</span> / <span>00:00:00:555</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -135,14 +148,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">levelSelector</h5>
-<span class='badge badge-success'>02.09.2024 2:22:51 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:22:51 pm</span>
-<span class='badge badge-default'>00:00:00:327</span>
+<span class='badge badge-success'>02.14.2024 10:28:23 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:24 pm</span>
+<span class='badge badge-default'>00:00:00:555</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\levelSelector.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\levelSelector.png">
@@ -154,7 +169,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:22:51 pm</td>
+        <td>10:28:23 pm</td>
         <td>
           Test case PASSED is:levelSelector
         </td>
@@ -166,12 +181,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">languageSelect</p>
             <p class="text-sm">
-              <span>2:22:58 pm</span> / <span>00:00:00:299</span>
+              <span>10:28:31 pm</span> / <span>00:00:00:438</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -180,14 +195,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">languageSelect</h5>
-<span class='badge badge-success'>02.09.2024 2:22:58 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:22:58 pm</span>
-<span class='badge badge-default'>00:00:00:299</span>
+<span class='badge badge-success'>02.14.2024 10:28:31 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:32 pm</span>
+<span class='badge badge-default'>00:00:00:438</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\languageSelect.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\languageSelect.png">
@@ -199,7 +216,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:22:58 pm</td>
+        <td>10:28:31 pm</td>
         <td>
           Test case PASSED is:languageSelect
         </td>
@@ -211,12 +228,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">Result</p>
             <p class="text-sm">
-              <span>2:23:00 pm</span> / <span>00:00:00:355</span>
+              <span>10:28:34 pm</span> / <span>00:00:00:414</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -225,14 +242,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Result</h5>
-<span class='badge badge-success'>02.09.2024 2:23:00 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:23:01 pm</span>
-<span class='badge badge-default'>00:00:00:355</span>
+<span class='badge badge-success'>02.14.2024 10:28:34 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:34 pm</span>
+<span class='badge badge-default'>00:00:00:414</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\Result.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\Result.png">
@@ -244,7 +263,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:23:00 pm</td>
+        <td>10:28:34 pm</td>
         <td>
           Test case PASSED is:Result
         </td>
@@ -256,12 +275,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="5"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">deatilsFirstCard</p>
             <p class="text-sm">
-              <span>2:23:06 pm</span> / <span>00:00:00:618</span>
+              <span>10:28:40 pm</span> / <span>00:00:00:559</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -270,14 +289,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">deatilsFirstCard</h5>
-<span class='badge badge-success'>02.09.2024 2:23:06 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:23:07 pm</span>
-<span class='badge badge-default'>00:00:00:618</span>
+<span class='badge badge-success'>02.14.2024 10:28:40 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:41 pm</span>
+<span class='badge badge-default'>00:00:00:559</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\deatilsFirstCard.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\deatilsFirstCard.png">
@@ -289,7 +310,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:23:06 pm</td>
+        <td>10:28:40 pm</td>
         <td>
           Test case PASSED is:deatilsFirstCard
         </td>
@@ -301,12 +322,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">Headings</p>
             <p class="text-sm">
-              <span>2:23:15 pm</span> / <span>00:00:00:333</span>
+              <span>10:28:46 pm</span> / <span>00:00:01:038</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -315,14 +336,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Headings</h5>
-<span class='badge badge-success'>02.09.2024 2:23:15 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:23:15 pm</span>
-<span class='badge badge-default'>00:00:00:333</span>
+<span class='badge badge-success'>02.14.2024 10:28:46 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:47 pm</span>
+<span class='badge badge-default'>00:00:01:038</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\Headings.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\Headings.png">
@@ -334,7 +357,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:23:15 pm</td>
+        <td>10:28:46 pm</td>
         <td>
           Test case PASSED is:Headings
         </td>
@@ -346,12 +369,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="7"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">Search2</p>
             <p class="text-sm">
-              <span>2:23:24 pm</span> / <span>00:00:00:293</span>
+              <span>10:28:55 pm</span> / <span>00:00:00:407</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -360,14 +383,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Search2</h5>
-<span class='badge badge-success'>02.09.2024 2:23:24 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:23:25 pm</span>
-<span class='badge badge-default'>00:00:00:293</span>
+<span class='badge badge-success'>02.14.2024 10:28:55 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:56 pm</span>
+<span class='badge badge-default'>00:00:00:407</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\Search2.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\Search2.png">
@@ -379,7 +404,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:23:24 pm</td>
+        <td>10:28:55 pm</td>
         <td>
           Test case PASSED is:Search2
         </td>
@@ -391,12 +416,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="8"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">displayLevels</p>
             <p class="text-sm">
-              <span>2:23:25 pm</span> / <span>00:00:00:567</span>
+              <span>10:28:58 pm</span> / <span>00:00:00:497</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -405,14 +430,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">displayLevels</h5>
-<span class='badge badge-success'>02.09.2024 2:23:25 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:23:26 pm</span>
-<span class='badge badge-default'>00:00:00:567</span>
+<span class='badge badge-success'>02.14.2024 10:28:58 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:28:58 pm</span>
+<span class='badge badge-default'>00:00:00:497</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\displayLevels.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\displayLevels.png">
@@ -424,7 +451,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:23:25 pm</td>
+        <td>10:28:58 pm</td>
         <td>
           Test case PASSED is:displayLevels
         </td>
@@ -436,12 +463,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="9"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">displayLanguages</p>
             <p class="text-sm">
-              <span>2:23:39 pm</span> / <span>00:00:01:070</span>
+              <span>10:29:18 pm</span> / <span>00:00:00:485</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -450,14 +477,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">displayLanguages</h5>
-<span class='badge badge-success'>02.09.2024 2:23:39 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:23:40 pm</span>
-<span class='badge badge-default'>00:00:01:070</span>
+<span class='badge badge-success'>02.14.2024 10:29:18 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:29:18 pm</span>
+<span class='badge badge-default'>00:00:00:485</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\displayLanguages.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\displayLanguages.png">
@@ -469,7 +498,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:23:39 pm</td>
+        <td>10:29:18 pm</td>
         <td>
           Test case PASSED is:displayLanguages
         </td>
@@ -481,12 +510,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="10"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">ThirdtimeHomepage</p>
             <p class="text-sm">
-              <span>2:24:00 pm</span> / <span>00:00:00:663</span>
+              <span>10:29:41 pm</span> / <span>00:00:00:665</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -495,14 +524,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">ThirdtimeHomepage</h5>
-<span class='badge badge-success'>02.09.2024 2:24:00 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:24:01 pm</span>
-<span class='badge badge-default'>00:00:00:663</span>
+<span class='badge badge-success'>02.14.2024 10:29:41 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:29:42 pm</span>
+<span class='badge badge-default'>00:00:00:665</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\ThirdtimeHomepage.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\ThirdtimeHomepage.png">
@@ -514,7 +545,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:24:00 pm</td>
+        <td>10:29:41 pm</td>
         <td>
           Test case PASSED is:ThirdtimeHomepage
         </td>
@@ -526,12 +557,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="11"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">clickSolution</p>
             <p class="text-sm">
-              <span>2:24:10 pm</span> / <span>00:00:00:591</span>
+              <span>10:29:49 pm</span> / <span>00:00:00:642</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -540,14 +571,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">clickSolution</h5>
-<span class='badge badge-success'>02.09.2024 2:24:10 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:24:10 pm</span>
-<span class='badge badge-default'>00:00:00:591</span>
+<span class='badge badge-success'>02.14.2024 10:29:49 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:29:50 pm</span>
+<span class='badge badge-default'>00:00:00:642</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\clickSolution.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\clickSolution.png">
@@ -559,7 +592,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:24:10 pm</td>
+        <td>10:29:49 pm</td>
         <td>
           Test case PASSED is:clickSolution
         </td>
@@ -571,12 +604,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="12"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">clickContactUs</p>
             <p class="text-sm">
-              <span>2:24:18 pm</span> / <span>00:00:00:276</span>
+              <span>10:29:57 pm</span> / <span>00:00:00:266</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -585,14 +618,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">clickContactUs</h5>
-<span class='badge badge-success'>02.09.2024 2:24:18 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:24:19 pm</span>
-<span class='badge badge-default'>00:00:00:276</span>
+<span class='badge badge-success'>02.14.2024 10:29:57 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:29:57 pm</span>
+<span class='badge badge-default'>00:00:00:266</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\clickContactUs.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\clickContactUs.png">
@@ -604,7 +639,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:24:18 pm</td>
+        <td>10:29:57 pm</td>
         <td>
           Test case PASSED is:clickContactUs
         </td>
@@ -616,12 +651,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="13"
           author=""
-          tag=""
+          tag="master regression"
           device="">
           <div class="test-detail">
             <p class="name">details</p>
             <p class="text-sm">
-              <span>2:24:25 pm</span> / <span>00:00:00:337</span>
+              <span>10:30:05 pm</span> / <span>00:00:00:268</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -630,14 +665,16 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">details</h5>
-<span class='badge badge-success'>02.09.2024 2:24:25 pm</span>
-<span class='badge badge-danger'>02.09.2024 2:24:25 pm</span>
-<span class='badge badge-default'>00:00:00:337</span>
+<span class='badge badge-success'>02.14.2024 10:30:05 pm</span>
+<span class='badge badge-danger'>02.14.2024 10:30:05 pm</span>
+<span class='badge badge-default'>00:00:00:268</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
+<span class="badge badge-pill badge-default">regression</span></div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\details.png' src="C:\Users\2303544\eclipse-workspace2\coursera_hackathon\Screenshots\details.png">
@@ -649,7 +686,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:24:25 pm</td>
+        <td>10:30:05 pm</td>
         <td>
           Test case PASSED is:details
         </td>
@@ -668,18 +705,294 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>13</span>
+</span>
+<p class="name">master</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>master</h4>
+<span status="pass" class='badge log pass-bg'>13 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>searchHomePage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>levelSelector</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>languageSelect</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Result</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>deatilsFirstCard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Headings</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Search2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>displayLevels</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>displayLanguages</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>ThirdtimeHomepage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>clickSolution</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>clickContactUs</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:30:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>details</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>searchHomePage</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>12</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="pass" class='badge log pass-bg'>12 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>levelSelector</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>languageSelect</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Result</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>deatilsFirstCard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Headings</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Search2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:28:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>displayLevels</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>displayLanguages</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>ThirdtimeHomepage</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>clickSolution</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>clickContactUs</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:30:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>details</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 9, 2024 02:21:10 pm</h3>
+<h3>Feb 14, 2024 10:27:39 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 9, 2024 02:24:27 pm</h3>
+<h3>Feb 14, 2024 10:30:07 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -749,10 +1062,43 @@
 </div></div>
 <script>
 var timeline = {
-"searchHomePage":0.301,"levelSelector":0.327,"languageSelect":0.299,"Result":0.355,"deatilsFirstCard":0.618,"Headings":0.333,"Search2":0.293,"displayLevels":0.567,"displayLanguages":1.07,"ThirdtimeHomepage":0.663,"clickSolution":0.591,"clickContactUs":0.276,"details":0.337
+"searchHomePage":0.432,"levelSelector":0.555,"languageSelect":0.438,"Result":0.414,"deatilsFirstCard":0.559,"Headings":1.038,"Search2":0.407,"displayLevels":0.497,"displayLanguages":0.485,"ThirdtimeHomepage":0.665,"clickSolution":0.642,"clickContactUs":0.266,"details":0.268
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>master</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>sanity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>regression</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -761,7 +1107,7 @@ var timeline = {
 <tbody>
 <tr>
 <td>Computer Name</td>
-<td>LTIN454249</td>
+<td>HP ELITEBOOK</td>
 </tr>
 <tr>
 <td>Environment</td>
@@ -772,12 +1118,12 @@ var timeline = {
 <td>Suman Paul(2303544)</td>
 </tr>
 <tr>
-<td>os</td>
-<td>Windows11</td>
+<td>operating System</td>
+<td>windows</td>
 </tr>
 <tr>
-<td>Browser name</td>
-<td>Chrome,Edge</td>
+<td>operating System</td>
+<td>chrome</td>
 </tr>
 </tbody>
 </table></div>

@@ -1,5 +1,13 @@
 package utilityFiles;
  
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import org.apache.poi.sl.draw.geom.Context;
 import org.testng.ITestContext;
 
 import org.testng.ITestListener;
@@ -25,10 +33,15 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public ExtentReports extent;  //populate common info on the report
 
 	public ExtentTest test; // creating test case entries in the report and update status of the test methods
+	
+	String reportName;
+
  
 	public void onStart(ITestContext context) {
 
-		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		reportName = "Test-Report-" + timeStamp + ".html";
+		sparkReporter = new ExtentSparkReporter(".\\reports\\" + reportName);
 
 		sparkReporter.config().setDocumentTitle("Automation Report"); // TiTle of report
 
@@ -40,15 +53,22 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 
 		extent.attachReporter(sparkReporter);
 
-		extent.setSystemInfo("Computer Name","LTIN454249"); 
+		extent.setSystemInfo("Computer Name","HP ELITEBOOK"); 
 
 		extent.setSystemInfo("Environment","Coursera Automation");
 
 		extent.setSystemInfo("Tester Name","Suman Paul(2303544)");
 
-		extent.setSystemInfo("os","Windows11");
+		String os = context.getCurrentXmlTest().getParameter("os");
+		extent.setSystemInfo("operating System", os);
 
-		extent.setSystemInfo("Browser name","Chrome,Edge");
+		String browser = context.getCurrentXmlTest().getParameter("browser");
+		extent.setSystemInfo("operating System", browser);
+				
+		List<String> includedGroups = context.getCurrentXmlTest().getIncludedGroups();
+		if (!includedGroups.isEmpty()) {
+			extent.setSystemInfo("Groups", includedGroups.toString());
+		}
 
 	}
  
@@ -56,7 +76,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 
 		test = extent.createTest(result.getName()); // create a new enty in the report
-
+		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
 		
 		try {
@@ -73,6 +93,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 
 		test = extent.createTest(result.getName());
+		test.assignCategory(result.getMethod().getGroups());
 
 		test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
 
@@ -83,6 +104,7 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
 	public void onTestSkipped(ITestResult result) {
  
 		test = extent.createTest(result.getName());
+		test.assignCategory(result.getMethod().getGroups());
 
 		test.log(Status.SKIP, "Test case SKIPPED is:" + result.getName());
 
@@ -90,10 +112,24 @@ public class ExtentReportManager extends BaseClass implements ITestListener{
  
 	
 
-	public void onFinish(ITestContext context) {
+	public void onFinish(ITestContext testContext) {
 
-		extent.flush();
+		    	extent.flush();
 
-	}
+		    	String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+reportName;
+
+		    	File extentReport = new File(pathOfExtentReport);
+
+		    	try {
+
+		    		Desktop.getDesktop().browse(extentReport.toURI());
+
+		    	}catch(IOException e) {
+
+		    		e.printStackTrace();
+
+		    	}
+
+		    }
 
 }

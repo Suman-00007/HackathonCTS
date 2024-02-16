@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/13</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 09 12:31:59 IST 2024</td>
+<td>Started on:</td><td>Fri Feb 16 14:29:34 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (262 ms)</td>
+<tr><td>Total time:</td><td>102 seconds (102056 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,11 +77,50 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.TC004_BusinessCoursera.setup()'><b>setup</b><br>Test class: testCases.TC004_BusinessCoursera<br>Parameters: windows, edge</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802896480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1802896480'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1962049725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1962049725'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,8 +146,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>101</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -122,7 +161,7 @@ function toggleAllBoxes() {
 <td title='testCases.TC004_BusinessCoursera.tearDown()'><b>tearDown</b><br>Test class: testCases.TC004_BusinessCoursera</td>
 <td></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -133,250 +172,51 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC004_BusinessCoursera.Headings()'><b>Headings</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2059282367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2059282367'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
-<td title='testCases.TC004_BusinessCoursera.deatilsFirstCard()'><b>deatilsFirstCard</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1027006452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1027006452'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
-<td title='testCases.TC004_BusinessCoursera.displayLevels()'><b>displayLevels</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace950125603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace950125603'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
-<td title='testCases.TC004_BusinessCoursera.levelSelector()'><b>levelSelector</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace227100877", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace227100877'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
-<td title='testCases.TC004_BusinessCoursera.Search2()'><b>Search2</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1536478396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1536478396'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
-<td title='testCases.TC004_BusinessCoursera.details()'><b>details</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538745405", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1538745405'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
-<td title='testCases.TC004_BusinessCoursera.searchHomePage()'><b>searchHomePage</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2000563893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2000563893'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
-<tr>
 <td title='testCases.TC004_BusinessCoursera.Result()'><b>Result</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace997918120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace997918120'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487131937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487131937'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -403,14 +243,53 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 <tr>
-<td title='testCases.TC004_BusinessCoursera.clickSolution()'><b>clickSolution</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1164436797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1164436797'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td title='testCases.TC004_BusinessCoursera.Headings()'><b>Headings</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2135563436", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2135563436'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -437,14 +316,53 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 <tr>
 <td title='testCases.TC004_BusinessCoursera.ThirdtimeHomepage()'><b>ThirdtimeHomepage</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace954937264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace954937264'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1893004914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1893004914'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -471,14 +389,53 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 <tr>
-<td title='testCases.TC004_BusinessCoursera.languageSelect()'><b>languageSelect</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339126187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace339126187'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td title='testCases.TC004_BusinessCoursera.displayLevels()'><b>displayLevels</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace206999441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace206999441'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -505,14 +462,199 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.clickSolution()'><b>clickSolution</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1759500919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1759500919'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.deatilsFirstCard()'><b>deatilsFirstCard</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace349757746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace349757746'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 <tr>
 <td title='testCases.TC004_BusinessCoursera.displayLanguages()'><b>displayLanguages</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace862152124", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace862152124'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1607745112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1607745112'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -539,14 +681,272 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.details()'><b>details</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace781527109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace781527109'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.languageSelect()'><b>languageSelect</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1331644236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1331644236'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.Search2()'><b>Search2</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243234606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1243234606'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 <tr>
 <td title='testCases.TC004_BusinessCoursera.clickContactUs()'><b>clickContactUs</b><br>Test class: testCases.TC004_BusinessCoursera</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1934729582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1934729582'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at testBase.BaseClass.setup(BaseClass.java:86)
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1355676410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1355676410'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -573,7 +973,153 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testCases.TC004_BusinessCoursera@7770f470</td></tr>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.levelSelector()'><b>levelSelector</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395912847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395912847'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
+<tr>
+<td title='testCases.TC004_BusinessCoursera.searchHomePage()'><b>searchHomePage</b><br>Test class: testCases.TC004_BusinessCoursera</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace287095360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace287095360'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2cb4c4f1f7d7b7b08253c39e8af1e3db, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64335}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Users\2303544\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.196.188:4444/s..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cb4c4f1f7d7b7b08253c39e8af1e3db
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1123)
+	at testBase.BaseClass.setup(BaseClass.java:154)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC004_BusinessCoursera@544fa968</td></tr>
 </table><p>
 </body>
 </html>

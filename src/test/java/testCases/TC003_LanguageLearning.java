@@ -8,7 +8,7 @@ import pageObjects.LanguageLearningPage;
 
 public class TC003_LanguageLearning extends TC002_WebDevelopmentPage {
 	
-	@Test(priority=9, groups= {"regression","Master"})
+	@Test(priority=9, groups= {"regression","master"})
 	public void displayLevels() throws IOException {
 		LanguageLearningPage ll = new LanguageLearningPage(driver);
 		ll.findLevels();
@@ -16,7 +16,7 @@ public class TC003_LanguageLearning extends TC002_WebDevelopmentPage {
 		
 	}
 	
-	@Test(priority=10, groups= {"regression","Master"})
+	@Test(priority=10, groups= {"regression","master"})
 	public void displayLanguages() throws InterruptedException, IOException {
 		LanguageLearningPage ll = new LanguageLearningPage(driver);
 		ll.clickShowmore();
