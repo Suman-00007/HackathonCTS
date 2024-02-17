@@ -33,8 +33,12 @@ public class WebDevelopmentPage extends BasePage{
 	@FindBy(xpath = "(//h3[contains(@class,\"CommonCard-title\")])[2]")WebElement SecondHead;
 	@FindBy(xpath = "(//p[contains(@class,\"cds-119 css-11uuo4b cds-121\")])[1]")WebElement Rating1;
 	@FindBy(xpath = "(//p[contains(@class,\"cds-119 css-11uuo4b cds-121\")])[2]")WebElement Rating2;
-	@FindBy(xpath = "(//div[contains(@class,'CommonCard-metadata')]//p[contains(@class,'Typography-base css-dmxkm1')])[1]")WebElement Duration1;
-	@FindBy(xpath = "(//div[contains(@class,'CommonCard-metadata')]//p[contains(@class,'Typography-base css-dmxkm1')])[2]")WebElement Duration2;
+	@FindBy(xpath ="(//div[contains(@class,'CommonCard-metadata')])[1]")WebElement Duration1;
+	@FindBy(xpath ="(//div[contains(@class,'CommonCard-metadata')])[2]")WebElement Duration2;
+
+			//@FindBy(xpath = "(//div[contains(@class,'CommonCard-metadata')]//p[contains(@class,'Typography-base css-dmxkm1')])[1]")WebElement Duration1;
+	
+			//@FindBy(xpath = "(//div[contains(@class,'CommonCard-metadata')]//p[contains(@class,'Typography-base css-dmxkm1')])[2]")WebElement Duration2;
 	@FindBy(xpath = "//div[contains(@class,'ProductCard-content')][1]")WebElement FirstCard;
 	@FindBy(xpath = "//h1[@data-e2e='hero-title']")WebElement FirstCardHead;
 	@FindBy(xpath = "(//div[contains(@class,'cds-Typography-base css-h1jogs')])[3]")WebElement FirstCardRating;

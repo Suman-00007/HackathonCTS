@@ -2,8 +2,10 @@ package pageObjects;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -28,10 +30,13 @@ public class ContactUsPage extends BasePage{
 	@FindBy(xpath = "//select[@id='What_the_lead_asked_for_on_the_website__c']") WebElement needs;
 	@FindBy(xpath = "//select[@id='Country']") WebElement country;
 	@FindBy(xpath = "//button[@type='submit']") WebElement submit;
+	@FindBy(xpath="//button[contains(@aria-label,'Close Drift Widget messenger preview overlay')]") WebElement popup;
 	@FindBy(xpath = "//div[@id='ValidMsgEmail']") WebElement error;
 	
+
 	public String enterDetails() throws InterruptedException, IOException {
 		ScreenShots ss = new ScreenShots(driver);
+		ContactUsPage cp = new ContactUsPage(driver);
 		FirstName.sendKeys("Suman");
 		LastName.sendKeys("Paul");
 		Email.sendKeys("huyfy");
@@ -47,6 +52,9 @@ public class ContactUsPage extends BasePage{
 		s4.selectByIndex(2);
 		Select s5 = new Select(country);
 		s5.selectByIndex(2);
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='drift-frame-controller']")));
+		popup.click();
+		driver.switchTo().defaultContent();
 		submit.click();
 		Thread.sleep(2000);
 		String error_msg = error.getText();

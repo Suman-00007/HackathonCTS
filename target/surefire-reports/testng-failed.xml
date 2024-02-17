@@ -6,24 +6,16 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <parameter name="os" value="windows"/>
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="testCases.TC004_BusinessCoursera">
         <methods>
           <include name="tearDown"/>
-          <include name="levelSelector"/>
-          <include name="Search2"/>
-          <include name="deatilsFirstCard"/>
-          <include name="clickContactUs"/>
-          <include name="ThirdtimeHomepage"/>
-          <include name="Result"/>
-          <include name="clickSolution"/>
-          <include name="Headings"/>
-          <include name="languageSelect"/>
-          <include name="searchHomePage"/>
           <include name="details"/>
+          <include name="clickContactUs"/>
           <include name="setup"/>
-          <include name="displayLevels"/>
+          <include name="ThirdtimeHomepage"/>
+          <include name="clickSolution"/>
           <include name="displayLanguages"/>
         </methods>
       </class> <!-- testCases.TC004_BusinessCoursera -->

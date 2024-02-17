@@ -38,7 +38,7 @@ public class HomePage extends BasePage {
 	
 	public void ScrollEnd() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+		js.executeScript("arguments[0].scrollIntoView();", Enterprise);
 	}
 	
 	public void clickEnterprise() {
