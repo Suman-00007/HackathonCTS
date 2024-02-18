@@ -25,7 +25,8 @@ public class WebDevelopmentPage extends BasePage{
 	@FindBy(xpath = "//button[@aria-label=\"Show more Language options\"]")WebElement showMoreLanguages;
 	@FindBy(xpath = "//input[@type='search']")WebElement LanguageSearchBox;
 	@FindBy(xpath = "//button[@aria-label=\"Search\"]")WebElement LanguageSearchButton;
-	@FindBy(xpath = "(//span[text()='English']//parent::div//preceding-sibling::span)[1]")WebElement EnglishLang;
+	@FindBy(xpath = "(//span[text()='English'])[1]")WebElement EnglishLang;
+	//@FindBY(xpath="(//span[text()='English']//parent::div//preceding-sibling::span)[1]")WebElement EnglishLang;
 	@FindBy(xpath = "//span[contains(text(),'Apply')]")WebElement ApplyButton;
 	@FindBy(xpath = "//label[@class=\"cds-checkboxAndRadio-label\"]//span[contains(text(),'Beginner')]")WebElement BeginnerLevel;
 	@FindBy(xpath = "//h3[contains(@class,\"CommonCard-title\")]")List<WebElement> Headings;
@@ -52,8 +53,9 @@ public class WebDevelopmentPage extends BasePage{
 	
 	//Action Methods
 	public void selectLanguage() throws InterruptedException {
-		Thread.sleep(1000);
-		EnglishLang.click();
+		Thread.sleep(2000);
+		Actions act = new Actions(driver);
+		act.moveToElement(EnglishLang).click().build().perform();
 		Thread.sleep(3000);
 		
 	}
