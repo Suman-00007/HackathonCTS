@@ -1,16 +1,11 @@
-00:54:23.642 [main] INFO  testCases.TC004_BusinessCoursera - ---//Language Selected//---
-00:54:36.520 [main] INFO  testCases.TC004_BusinessCoursera - ---//Language Learning Page opened//---
-00:54:36.877 [main] INFO  testCases.TC004_BusinessCoursera - ---//Data Captured from Levels//---
-00:54:44.760 [main] INFO  testCases.TC004_BusinessCoursera - ---//Data Captured from Languages//---
-00:54:57.092 [main] INFO  testCases.TC004_BusinessCoursera - ---//Enterprise opened//---
-00:55:06.839 [main] INFO  testCases.TC004_BusinessCoursera - ---//Contact Us Page Opened//---
-00:55:10.694 [main] INFO  testCases.TC004_BusinessCoursera - ---//Error Message Captured from Contact Us Page//---
-00:58:50.732 [main] INFO  testCases.TC004_BusinessCoursera - ---//WebDevelopment Page opened//---
-00:58:54.122 [main] INFO  testCases.TC004_BusinessCoursera - ---//Level Selected//---
-00:59:00.569 [main] INFO  testCases.TC004_BusinessCoursera - ---//Language Selected//---
-00:59:14.009 [main] INFO  testCases.TC004_BusinessCoursera - ---//Language Learning Page opened//---
-00:59:14.374 [main] INFO  testCases.TC004_BusinessCoursera - ---//Data Captured from Levels//---
-00:59:22.791 [main] INFO  testCases.TC004_BusinessCoursera - ---//Data Captured from Languages//---
-00:59:34.604 [main] INFO  testCases.TC004_BusinessCoursera - ---//Enterprise opened//---
-00:59:44.095 [main] INFO  testCases.TC004_BusinessCoursera - ---//Contact Us Page Opened//---
-00:59:47.957 [main] INFO  testCases.TC004_BusinessCoursera - ---//Error Message Captured from Contact Us Page//---
+22:31:32.462 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//WebDevelopment Page opened//---
+22:31:36.130 [TestNG-tests-1] INFO  testCases.TC004_BusinessCoursera - ---//Level Selected//---
+22:31:36.256 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Level Selected//---
+22:31:43.722 [TestNG-tests-1] INFO  testCases.TC004_BusinessCoursera - ---//Language Selected//---
+22:31:43.941 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Language Selected//---
+22:32:06.578 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Language Learning Page opened//---
+22:32:07.022 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Data Captured from Levels//---
+22:32:22.224 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Data Captured from Languages//---
+22:32:50.893 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Enterprise opened//---
+22:33:08.620 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Contact Us Page Opened//---
+22:33:23.492 [TestNG-tests-2] INFO  testCases.TC004_BusinessCoursera - ---//Error Message Captured from Contact Us Page//---

@@ -1,13 +1,17 @@
 package pageObjects;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilityFiles.ExcelUtils;
 import utilityFiles.ScreenShots;
@@ -32,7 +36,7 @@ public class ContactUsPage extends BasePage{
 	@FindBy(xpath = "//button[@type='submit']") WebElement submit;
 	@FindBy(xpath="//button[contains(@aria-label,'Close Drift Widget messenger preview overlay')]") WebElement popup;
 	@FindBy(xpath = "//div[@id='ValidMsgEmail']") WebElement error;
-	
+	@FindBy(xpath="//iframe[@class='drift-frame-controller']") WebElement popupFrame;
 
 	public String enterDetails() throws InterruptedException, IOException {
 		ScreenShots ss = new ScreenShots(driver);
@@ -52,7 +56,10 @@ public class ContactUsPage extends BasePage{
 		s4.selectByIndex(2);
 		Select s5 = new Select(country);
 		s5.selectByIndex(2);
-		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='drift-frame-controller']")));
+//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@class='drift-frame-controller']")));		
+		Thread.sleep(10000);
+		driver.switchTo().frame(popupFrame);
 		popup.click();
 		driver.switchTo().defaultContent();
 		submit.click();

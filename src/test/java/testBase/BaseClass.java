@@ -41,9 +41,7 @@ public class BaseClass {
 	public static WebDriver driver;
  
 	public Properties p;
- 
-	public int choice;
- 
+  
 	public Logger logger;
  
 	Scanner sc;
